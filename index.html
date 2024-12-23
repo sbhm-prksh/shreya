@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter to Shreya</title>
+    <style>
+        /* Background */
+        body {
+            margin: 0;
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Letter Container */
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            width: 90%;
+            max-width: 800px;
+            text-align: left;
+            overflow-y: auto;
+        }
+
+        /* Title */
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #444;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Subheading */
+        h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        /* Paragraphs */
+        p {
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        /* Signature */
+        .signature {
+            text-align: right;
+            margin-top: 30px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        /* Heart Animation */
+        @keyframes pop {
+            0% {
+                transform: scale(0.5) translateY(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1.5) translateY(-50px);
+                opacity: 0;
+            }
+        }
+
+        .heart {
+            position: fixed;
+            /* Changed to fixed for consistent positioning */
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 0, 0, 0.8);
+            transform: rotate(-45deg);
+            animation: pop 2s ease-out infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 0, 0, 0.8);
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: 10px;
+        }
+
+        /* Position and Animation Delay */
+        .heart:nth-child(1) {
+            top: 40%;
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .heart:nth-child(2) {
+            top: 60%;
+            left: 40%;
+            animation-delay: 0.5s;
+        }
+
+        .heart:nth-child(3) {
+            top: 30%;
+            left: 70%;
+            animation-delay: 1s;
+        }
+
+        .heart:nth-child(4) {
+            top: 50%;
+            left: 90%;
+            animation-delay: 1.5s;
+        }
+
+        .heart:nth-child(5) {
+            top: 70%;
+            left: 10%;
+            animation-delay: 2s;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .signature {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="container">
+        <h1>Dear Shreya</h1>
+        <h2>A Heartfelt Note</h2>
+        <p>I hope you know how much I value and admire you—not just for the person you are but also for the way you
+            approach life. You’ve done incredibly well, and I’m genuinely proud of how balanced and fulfilling your way
+            of living is. Please know that what I’m about to share is purely my perspective, <strong>not a disagreement
+                with yours.</strong></p>
+        <p>I completely agree with your point that life is uncertain and that we should try to balance work, family,
+            relationships, and fun. It’s valid, 100% valid. That’s exactly how life should be lived because we never
+            know how things might change with time.
+        </p>
+        <p>But here’s where my thoughts diverge just a little. Don’t you think that, in our early career, there’s a
+            small window where we need to lock in for 2-3 years and focus entirely on building the foundation of our
+            late 20s, 30s, and the rest of our lives? The first such opportunity was cracking JEE. The second was during
+            campus placements. And now, for the next few months, this is the phase where I feel we should give it
+            everything we’ve got—our time, energy, and focus.
+
+        </p>
+        <p>Of course, balance is important, but there are times when achieving balance may not be practical. When you’re
+            working toward a critical goal, like placements, GATE, or any <strong>life-changing milestone</strong>,
+            sacrifices become
+            necessary. People often give up sleep, nutrition, and leisure to achieve their goals. In my view, when such
+            moments come—like the next 6-12 months—there’s only room to balance out the bare essentials, like sleep and
+            fitness, at best. Anything beyond that can be temporarily put on hold. After all, as I’ve mentioned before,
+            the efforts we put in during our early 20s <strong>compound over time.</strong> So, in those critical
+            moments, should balance
+            really be the priority? I don’t think so.</p>
+        <p>
+            Right now, we have the privilege of fewer responsibilities. I don’t have to worry much about my father’s
+            health or my mother’s. I have the freedom to focus solely on my work without the weight of balancing family
+            obligations. Similarly, I don’t have kids to think about or a household to manage. And Shreya, I know you
+            understand this—it’s the same for you right now.
+        </p>
+        <p>
+            But later in life, when responsibilities grow, we won’t have this freedom. For instance, right now, my
+            mother needs me, but I am not there because, as you also suggested, placements are coming, so I chose not to
+            go now. But in the future, I can’t do the same. I can’t be absent when my mother needs me. I can’t put down
+            your calls. I can’t leave you when you need me most, like during pregnancy or any other major life event.
+            Later, life won’t pause for us—but right now, it can. That’s why I believe this phase is the perfect time to
+            prioritize our careers and focus on building the foundation for the future.
+
+
+        </p>
+        <p>
+            I want to emphasize that I’m not postponing trips, fun, and adventures until our 30s or later. That’s not
+            what I mean. All I’m saying is that for the next 6-7-8 months, <strong>until I sort out my finances and
+                stand firmly
+                on my own feet,</strong> I need to focus on working hard. After that, things will take another turn, and
+            I’ll
+            absolutely live a more balanced life. I’ll make time for trips, leisure, and all the things we love doing
+            together.
+        </p>
+        <p>
+            And Shreya, this applies to you too. For your GATE preparation, you need to put in the hours. You’ve already
+            done exceptionally well by cracking your placement, and you’ve <strong>earned</strong> the last couple of
+            months of relaxation and fun. But I’d like to ask you—are you truly enjoying this downtime? Or is there a
+            part of you that feels you could be doing more right now? Give it a thought.
+        </p>
+        <p>
+            In trying to find balance and room for fun and trips right now, don’t you think we should be cautious that
+            it doesn’t lead to a future where balance doesn’t even become a possibility? Shouldn’t we aim for a future
+            where balance truly becomes an option?
+        </p>
+        <p>
+            All I want is for both of us to use this time wisely, to work hard now so that we can create a future where
+            we won’t have any regrets about the choices we made in our early 20s. I know it’s tough, but I also know
+            that we’re capable of making it through this phase together. And when the time comes, I promise you, we’ll
+            celebrate every bit of our success—together.
+        </p>
+        <p class="signature">Yours always,<br>Shubham &nbsp;&nbsp;</p>
+
+    </div>
+
+</body>
+
+</html>
